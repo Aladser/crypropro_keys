@@ -89,7 +89,7 @@
             this.Controls.Add(this.version_Label);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "КриптоПро ключ";
+            this.Text = "Ключ КриптоПро";
             this.ResumeLayout(false);
             this.PerformLayout();
 
