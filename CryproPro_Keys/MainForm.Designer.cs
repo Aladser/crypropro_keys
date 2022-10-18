@@ -28,67 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cpv_Label = new System.Windows.Forms.Label();
-            this.keyLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.version_Label = new System.Windows.Forms.Label();
+            this.key_Label = new System.Windows.Forms.Label();
+            this.version_Field = new System.Windows.Forms.Label();
+            this.key_Field = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // cpv_Label
+            // version_Label
             // 
-            this.cpv_Label.Location = new System.Drawing.Point(12, 9);
-            this.cpv_Label.Name = "cpv_Label";
-            this.cpv_Label.Size = new System.Drawing.Size(66, 23);
-            this.cpv_Label.TabIndex = 0;
-            this.cpv_Label.Text = "Крипто Про";
+            this.version_Label.BackColor = System.Drawing.SystemColors.Control;
+            this.version_Label.Location = new System.Drawing.Point(12, 9);
+            this.version_Label.Name = "version_Label";
+            this.version_Label.Size = new System.Drawing.Size(61, 23);
+            this.version_Label.TabIndex = 0;
+            this.version_Label.Text = "Версия:";
+            this.version_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // keyLabel
+            // key_Label
             // 
-            this.keyLabel.Location = new System.Drawing.Point(12, 39);
-            this.keyLabel.Name = "keyLabel";
-            this.keyLabel.Size = new System.Drawing.Size(33, 23);
-            this.keyLabel.TabIndex = 1;
-            this.keyLabel.Text = "Ключ";
+            this.key_Label.BackColor = System.Drawing.SystemColors.Control;
+            this.key_Label.Location = new System.Drawing.Point(12, 47);
+            this.key_Label.Name = "key_Label";
+            this.key_Label.Size = new System.Drawing.Size(61, 23);
+            this.key_Label.TabIndex = 1;
+            this.key_Label.Text = "Ключ:";
+            this.key_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label1
+            // version_Field
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(84, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(246, 23);
-            this.label1.TabIndex = 2;
+            this.version_Field.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.version_Field.Location = new System.Drawing.Point(79, 9);
+            this.version_Field.Name = "version_Field";
+            this.version_Field.Size = new System.Drawing.Size(230, 23);
+            this.version_Field.TabIndex = 2;
+            this.version_Field.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // key_Field
             // 
-            this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(84, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(246, 23);
-            this.label2.TabIndex = 3;
+            this.key_Field.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.key_Field.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.key_Field.Location = new System.Drawing.Point(82, 50);
+            this.key_Field.Multiline = true;
+            this.key_Field.Name = "key_Field";
+            this.key_Field.ReadOnly = true;
+            this.key_Field.Size = new System.Drawing.Size(227, 20);
+            this.key_Field.TabIndex = 4;
+            this.key_Field.TabStop = false;
+            this.key_Field.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(342, 81);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.keyLabel);
-            this.Controls.Add(this.cpv_Label);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(333, 92);
+            this.Controls.Add(this.key_Field);
+            this.Controls.Add(this.version_Field);
+            this.Controls.Add(this.key_Label);
+            this.Controls.Add(this.version_Label);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "КриптоПро Ключ";
+            this.Text = "КриптоПро ключ";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label cpv_Label;
-        private System.Windows.Forms.Label keyLabel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label version_Label;
+        private System.Windows.Forms.Label key_Label;
+        private System.Windows.Forms.Label version_Field;
+        private System.Windows.Forms.TextBox key_Field;
     }
 }
 
