@@ -1,1 +1,1 @@
-[Программа](/CryproPro_Keys/bin/Debug/CryproPro_Keys.exe)
+[Ключи КриптоПро](/CryproPro_Keys/bin/Debug/CryproPro_Keys.exe)
